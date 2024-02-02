@@ -1,0 +1,214 @@
+.cards {
+  margin: 0 auto;
+  width: 100%;
+  height: min-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  margin: 0 5px;
+  width: 334px;
+  height: 592px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px 0 28px;
+  box-shadow: 0px 4px 95px 0px rgba(0, 0, 0, 0.15);
+  background: rgba(106, 153, 78, 1);
+  border-radius: 11.35px;
+}
+
+.card-box {
+  max-width: 214px;
+  width: 100%;
+}
+
+.card-title {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+}
+
+.active {
+  margin: 0 -20px;
+  background: rgba(29, 37, 43, 1);
+  margin-bottom: 60px;
+  z-index: 2;
+}
+
+.price-box {
+  padding-bottom: 15.64px;
+  margin-bottom: 15.64px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  border-bottom: 0.95px solid rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  animation: ani 3s forwards;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.sum {
+  margin-left: 8px;
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0em;
+}
+
+.period {
+  margin-left: 5px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  cursor: pointer;
+}
+
+.price-text {
+  max-width: 100%;
+  margin-bottom: 28px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  color: rgba(255, 255, 255, 0.8);
+  white-space: wrap;
+}
+
+.core-features {
+  margin-top: 22px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+}
+
+.feature-name {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+}
+
+.feature-list {
+  padding-inline-start: 20px;
+  margin: 0;
+  margin-top: 24px;
+  list-style-image: url(../../images/arrow.svg);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.currency {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: min-content;
+  height: min-content;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  cursor: pointer;
+}
+
+.feature-item {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.card-button {
+  position: absolute;
+  bottom: 28px;
+  padding: 12px 22px;
+  max-width: 214px;
+  width: 100%;
+  height: 39px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 0.86px solid rgba(208, 208, 208, 1);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 4px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+.button-active {
+  float: right;
+  background: linear-gradient(0deg, #bc4749, #bc4749),
+    linear-gradient(0deg, #d66567, #d66567);
+}
+
+.button-active img{
+  margin-left: 10px;
+}
+
+.bonus {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 17px;
+}
+
+@media screen and (max-width: 800px) {
+  .cards {
+    margin: 0 15px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card {
+    width: 80%;
+    max-width: 334px;
+    min-width: 290px;
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: none;
+  }
+
+  .slideshow-container {
+    /* position: static; */
+    margin: 0 auto;
+    padding: 0;
+  }
+}
